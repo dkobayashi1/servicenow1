@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=true" label="innovative" max_length="40" name="x_snc_innovative_innovative" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" mandatory="true" max_length="40" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="process" label="Idea type" mandatory="true" max_length="40" name="u_idea_type" type="string">
+            <choice>
+                <element label="Cost Savings" sequence="0" value="cost"/>
+                <element label="Process Improvement" sequence="1" value="process"/>
+                <element label="Team Building" sequence="2" value="team"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Implementation" max_length="40" name="u_implementation" type="string"/>
+        <element label="Idea implemented" max_length="40" name="u_implemented" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Short description" mandatory="true" max_length="40" name="u_short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Description" mandatory="true" max_length="40" name="u_string_5" type="string">
+            <choice/>
+        </element>
+    </element>
+</database>
